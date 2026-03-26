@@ -8,7 +8,7 @@ using System.Text.Json;
 
 namespace WEB.Pages.Vehiculos
 {
-    [Authorize]
+    [Authorize(Roles = "1")]
     public class IndexModel : PageModel
     {
         private readonly IConfiguracion _configuracion;
